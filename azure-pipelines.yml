@@ -14,6 +14,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Build.RequestedFor: $(Build.RequestedFor)
-    echo Build.QueuedBy: $(Build.QueuedBy)
+    echo Build.RequestedFor: $(Build.RequestedFor) (id: $(Build.RequestedForId), email:  $(Build.RequestedForEmail))
+    echo Build.QueuedBy: $(Build.QueuedBy) (id: $(Build.QueuedById))
   displayName: 'Print Build information'
