@@ -14,6 +14,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo $(Build.RequestedFor)
-    echo $(Build.QueuedBy)
-  displayName: 'Run a multi-line script'
+    echo Build.RequestedFor: $(Build.RequestedFor)
+    echo Build.QueuedBy: $(Build.QueuedBy)
+  displayName: 'Print Build information'
